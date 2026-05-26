@@ -21,9 +21,9 @@ static uint32_t seq_counter = 0;
 // Callback pentru confirmarea livrarii
 static void on_sent(const esp_now_send_info_t *tx_info, esp_now_send_status_t status) {
     if (status == ESP_NOW_SEND_SUCCESS) {
-        ESP_LOGI(TAG, "Livrat la Master");
+        ESP_LOGI(TAG, "✓ Livrat la Master");
     } else {
-        ESP_LOGW(TAG, "Pierdut (no ACK)");
+        ESP_LOGW(TAG, "✗ Pierdut (no ACK)");
     }
 }
 
@@ -54,7 +54,7 @@ static uint16_t read_battery_mv(void) {
 
 void app_main(void) {
     ESP_LOGI(TAG, "");
-    ESP_LOGI(TAG, "SnowyLink SLAVE - Buton #%d", MY_BUTTON_ID);
+    ESP_LOGI(TAG, "SnowyLink SLAVE — Buton #%d", MY_BUTTON_ID);
 
     
     
@@ -95,7 +95,7 @@ void app_main(void) {
         .rate    = WIFI_PHY_RATE_1M_L,
     };
     ESP_ERROR_CHECK(esp_now_set_peer_rate_config(MASTER_MAC, &rate_cfg));
-    ESP_LOGI(TAG, "Rate forced: 1Mbps DSSS");
+    ESP_LOGI(TAG, "✓ Rate forced: 1Mbps DSSS");
     
     // CONFIG BUTON cu PULL-UP
     
@@ -111,7 +111,7 @@ void app_main(void) {
     ESP_LOGI(TAG, "Aștept apăsare buton (GPIO %d)...", BTN_GPIO);
     ESP_LOGI(TAG, "");
     
-    // BUCLA PRINCIPALA - POLLING BUTON
+    // BUCLA PRINCIPALĂ — POLLING BUTON
     
     while (1) {
         // Asteaptă ca butonul sa fie apăsat (GPIO trece de la 1 la 0)

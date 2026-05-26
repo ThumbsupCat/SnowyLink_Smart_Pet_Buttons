@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "Slave",
-    "project_version":    "c96365e-dirty",
+    "project_version":    "ad319eb-dirty",
     "project_path":       "/home/bnuy/Desktop/PM/Slave",
     "idf_path":           "/home/bnuy/.espressif/v6.0.1/esp-idf",
     "build_dir":          "/home/bnuy/Desktop/PM/Slave/build",
