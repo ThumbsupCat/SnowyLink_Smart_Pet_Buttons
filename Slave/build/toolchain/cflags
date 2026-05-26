@@ -1,0 +1,3 @@
+-march=rv32imc_zicsr_zifencei
+-mtune=esp-base
+"-specs=/home/bnuy/Desktop/PM/Slave/build/specs/picolibc.specs"
