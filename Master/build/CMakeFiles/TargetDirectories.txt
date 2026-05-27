@@ -1,0 +1,2 @@
+/home/bnuy/Desktop/PM/Master/build/CMakeFiles/edit_cache.dir
+/home/bnuy/Desktop/PM/Master/build/CMakeFiles/rebuild_cache.dir
